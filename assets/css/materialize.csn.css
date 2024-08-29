@@ -1,0 +1,242 @@
+@charset "UTF-8";
+
+/* Reset CSS Define Patterns
+================================================== */
+* { margin: 0; padding: 0; border: 0; } img, embed, object, video { max-width: 100%; }
+
+
+/* css root */
+:root {
+
+    /* Body : Background
+    ============================== */
+    --bg-incolor : transparent; --bg-color-one : ; --bg-color-two : ; --bg-color-tre : ;
+
+    /* Title : H1
+    ============================== */
+    --title-color-one : ; --title-color-two: ; --title-color-tre : ;
+
+    /* Subtitle : H2-H6
+    ============================== */
+    --title-color-one : ; --title-color-two: ; --title-color-tre : ;
+
+    /* Text : Content or Paragraph
+    ============================== */
+    --text-color : ; --text-color-one : ; --text-color-two: ; --text-color-tre : ;
+
+    /* Link : Word or Phrase
+    ============================== */
+    --link-color-one : ; --link-color-two: ; --link-color-tre : ;
+
+    /* Label : Badge, Button
+    ============================== */
+    --label-color-one : ; --label-color-two: ; --label-color-tre : ;
+
+    /* Border : Line
+    ============================== */
+    --border-color-one : ; --border-color-two: ; --border-color-tre : ;
+
+    /* Border : Line
+    ============================== */
+    --component-incolor : transparent; --component-color-one : ; --component-color-two: ; --component-color-tre : ;
+}
+
+.night:root {}
+
+/* Defined parameter for page html
+=============================================================== */
+html, body { 
+    font-family: '', sans-serif; font-size: 16px; height: 100%; 
+    background-color: var(--bg-color-one);
+}
+
+/* Defined position e size for dropdown
+=============================================================== */
+#dropdown { top: -64px; width: 250px; }
+.dropdown-content { min-width: 250px; height: auto; overflow: hidden; }
+
+
+/* Text ( link )
+================================================== */
+a { 
+    color: var(--link-color-one);
+    text-decoration: none;
+}
+/* Button Link
+================================================== */
+a.btn-flat { 
+    font-size: 18px; margin-top: 30px; 
+    text-transform: inherit; font-weight: bold;
+    border-radius: 7px; 
+    color: var() !important; 
+}
+/* Button small
+    ================================================== */
+.btn {
+    font-size: 16px; border-radius: 7px; margin-top: 0px;
+    text-transform: inherit; text-transform: capitalize; 
+    background-color: var(--component-color-one) !important; color: var(--text-color-two) !important;
+    -webkit-box-shadow: 0 0px 0px 0 var(--component-incolor), 0 0px 0px 0px var(--component-incolor), 0 0px 0px 0 var(--component-incolor);
+    box-shadow: 0 0px 0px 0 var(--component-incolor), 0 0px 0px 0px var(--component-incolor), 0 0px 0px 0 var(--component-incolor);
+}
+/* Button bigger
+    ================================================== */
+.btn-large {
+    font-size: 18px; border-radius: 7px; margin-top: 30px;
+    text-transform: inherit; text-transform: capitalize; 
+    background-color: var(--component-color-one) !important; color: var(--text-color-two) !important;
+    -webkit-box-shadow: 0 0px 0px 0 var(--component-incolor), 0 0px 0px 0px var(--component-incolor), 0 0px 0px 0 var(--component-incolor);
+    box-shadow: 0 0px 0px 0 var(--component-incolor), 0 0px 0px 0px var(--component-incolor), 0 0px 0px 0 var(--component-incolor);
+}
+
+/* Form Fields 
+================================================== */
+.input-field input[ type=text ] + label { color: var(--label-color-one) !important; margin-left: 12px; margin-top: 20px; }
+.input-field input[ type=text ] { width: 265px; min-width: 80%; max-width: 120%; height: 70px; padding-left: 12px; padding-right: 12px; font-size: 18px; color: var(--label-color-one); 
+    border: 1px solid var(--border-color-one) !important; box-shadow: 0 0 0 0 var(--component-incolor) !important; border-radius: 7px; }
+.input-field input[ type=text ]:focus + label { color: var(--label-color-one) !important; margin-left: 12px; margin-top: 20px; }
+.input-field input[ type=text ]:focus { border: 1px solid var(--border-color-one) !important; border-radius: 7px; font-size: 18px; color: var(--label-color-one); }
+    
+.input-field input[ type=number ] + label { color: var(--label-color-one) !important; margin-left: 12px; margin-top: 20px; }
+.input-field input[ type=number ] { width: 265px; min-width: 80%; max-width: 120%; height: 70px; padding-left: 12px; padding-right: 12px; font-size: 18px; color: var(--label-color-one); 
+    border: 1px solid var(--border-color-one) !important; box-shadow: 0 0 0 0 var(--component-incolor) !important; border-radius: 7px; }
+.input-field input[ type=number ]:focus + label { color: var(--label-color-one) !important; margin-left: 12px; margin-top: 20px; }
+.input-field input[ type=number ]:focus { border: 1px solid var(--border-color-one) !important; border-radius: 7px; font-size: 18px; color: var(--label-color-one); }
+
+.input-field input[ type=email ] + label { color: var(--label-color-one) !important; margin-left: 12px; margin-top: 20px; }
+.input-field input[ type=email ] { width: 265px; min-width: 80%; max-width: 120%; height: 70px; padding-left: 12px; padding-right: 12px; font-size: 18px; color: var(--label-color-one); 
+    border: 1px solid var(--border-color-one) !important; box-shadow: 0 0 0 0 var(--component-incolor) !important; border-radius: 7px; }
+.input-field input[ type=email ]:focus + label { color: var(--label-color-one) !important; margin-left: 12px; margin-top: 20px; }
+.input-field input[ type=email ]:focus { border: 1px solid var(--border-color-one) !important; border-radius: 7px; font-size: 18px; color: var(--label-color-one); }
+    
+.input-field input[ type=password ] + label { color: var(--label-color-one) !important; margin-left: 12px; margin-top: 20px; }
+.input-field input[ type=password ] { width: 265px; min-width: 80%; max-width: 120%; height: 70px; padding-left: 12px; padding-right: 12px; font-size: 18px; color: var(--label-color-one);
+    border: 1px solid var(--border-color-one) !important; box-shadow: 0 0 0 0 var(--component-incolor) !important; border-radius: 7px; }
+.input-field input[ type=password ]:focus + label { color: var(--label-color-one) !important; margin-left: 12px; margin-top: 20px; }
+.input-field input[ type=password ]:focus { border: 1px solid var(--border-color-one) !important; border-radius: 7px; font-size: 18px; color: var(--label-color-one); }
+
+/* Block ( sidenav menu )
+================================================== */
+nav .sidenav-trigger {
+    float: left; position: relative; margin: 0 18px;
+    z-index: 1; height: 56px; color: var(--link-color-one);
+    display: block;
+}
+
+/* Structure : Navbar
+================================================== */
+.strucs-navbar {
+    display: inline-block; z-index: 70; 
+    position: absolute; left: 50%; margin-top: 10px; width: 96.6666667%; margin-left: -48.33333335%;
+    background-color: var(--component-incolor) ! important; box-shadow: none; border-radius: 7px;  
+    border-top: 0px solid var(--border-color-one); border-right: 0px solid var(--border-color-one); 
+    border-bottom: 0px solid var(--border-color-one); border-left: 0px solid var(--border-color-one); 
+}
+
+/* Structure : Navbar
+================================================== */
+.strucs-navbar-one {
+    display: inline-block; z-index: 70;
+    background-color: var(--component-incolor); 
+    box-shadow: none; border-bottom: 0px solid var(--border-color-one);
+}
+    nav .brand-logo {
+        width: auto; height: 56px;
+        left: 50%; transform: translateX(-50%);
+        display: flex; flex-direction: row; justify-content: flex-start;
+    }
+        a .logo-box {
+            width: 56px; height: 56px;
+            display: flex; flex-direction: column; justify-content: center;
+        }
+            a .icon-logo {
+                width: 32px; height: 32px;
+                border-radius: 50%;
+                border: 3px solid var(--border-color-one);
+                margin: 0 auto;
+            }
+            a .text-logo {
+                margin-left: 0px; display: block;
+                font-size: 28px; font-weight: 400;
+                color: var(--text-color);
+}
+
+/* Component ( Navbar Mobile Left and Right )
+================================================== */
+.nav-mobile-left { display: none; } .nav-mobile-right { display: none; }
+/* Component ( Navbar Desktop Left )
+================================================== */
+.nav-desktop-left { 
+    width: auto; height: 64px; display: inline-block; display: block; margin-left: 0px; 
+}
+    .nav-desktop-left li>a { color: var() !important }
+    #d-moon { display: block; } #d-sun { display: none; }
+        .li-box { width: 64px; height: 64px; padding: 0px; }
+            .lia-box { width: 64px; height: 64px; }
+                .la-box { 
+                    font-size: 24px; color: var();  width: 64px; margin-left: -15px; text-align: center; 
+                }
+/* Component ( Navbar Desktop Right )
+================================================== */
+.nav-desktop-right { display: block; width: auto; height: 64px; }
+    a .i-font {
+        display: flex; flex-direction: column; justify-content: center;
+        height: 64px; font-size: 24px; text-align: center;
+        color: var();
+    }
+    .dropdown-content { 
+        top: -64px; border-radius: 0px 0px 0px 0px;
+        border-bottom: 1px solid var();
+        border-left: 1px solid var();
+        background-color: var(--component-color-one);
+    }.dropdown-content li>a { 
+        font-size: 18px;
+        color: var() ; 
+    }
+
+/* Component ( Footer )
+================================================== */
+.page-footer {
+    z-index: 50; width: 100%;
+    bottom: 0; padding-top: 0px;
+    border-top: 1px solid var();
+    background-color: var(--component-color-one);
+}
+    .footer-col-left { width: 0px; height: auto; } 
+    .footer-col-right { width: 100%; height: auto; margin-left: 100px; }
+    .footer-icons { width: 100%; height: auto; padding-left: 15px; }
+    .page-footer .footer-copyright {
+        padding: 10px 0px;
+        color: var();
+        background-color: var(--component-color-one)
+    }
+        .footer-content-left {
+            float: left; margin-left: 40px;
+        }
+        .footer-content-right {
+            position: absolute; float: right; right: 40px;
+        }
+        .footer-text { color: var(--text-color-two) !important; }
+
+
+
+
+/* Breackpoint Screen Small ( s ), mobile: phone: 3..." ⇒ 6" inch
+=============================================================== */
+@media screen and (min-width: 240px) and (max-width: 600px) { }
+
+/* Breackpoint Screen Medium ( m ), mobile: phone and tablet: 6..." ⇒ 10" inch
+============================================================================ */
+@media screen and (min-width: 601px) and (max-width: 992px) { }
+
+/* Breackpoint Screen Large ( l ), mobile: notepad, netbook, notebook: 10..." ⇒ 17" inch
+====================================================================================== */
+@media screen and (min-width: 993px) and (max-width: 1200px) { }
+
+/* Breackpoint Screen Extra Large ( xl ), desktop: computer and television: 17..." ⇒ 27" inch
+=========================================================================================== */
+@media screen and (min-width: 1201px) and (max-width: 1600px) { }
+
+/* Breackpoint Screen Extra Double Large ( xxl ), desktop: computer and television: 27..." ⇒ inch
+=============================================================================================== */
+@media screen and (min-width: 1601px) and (max-width: 1920px) { }
